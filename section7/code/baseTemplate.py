@@ -22,7 +22,7 @@ class ConcreteCommand(Command):
         print("Build A Command by Receive")
 
     def execute(self):
-        print("Run Command !")
+        self.recv.action()
 
 
 # Invoker
@@ -37,8 +37,8 @@ class Invoker:
 
 # Receiver
 class Receiver:
-    def __init__(self):
-        print("Get all Receive Action!")
+    def action(self):
+        print("Run Receive Action!")
 
 
 if (__name__ == '__main__'):
