@@ -50,5 +50,5 @@ if (__name__ == '__main__'):
     invoker = Invoker()
     # 在调用器中添加任务
     invoker.command(cmd)
-    # 调用器执行所有任务
+    # 调用器执行所有任务1
     invoker.execute()
